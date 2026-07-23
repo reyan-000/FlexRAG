@@ -1,0 +1,30 @@
+# Virtual Environment
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment Variables
+.env
+
+# Vector Database
+store.faiss
+store_chunks.pkl
+
+# Uploaded Documents
+docs/*.pdf
+docs/*.txt
+!docs/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
