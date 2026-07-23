@@ -120,9 +120,16 @@ st.sidebar.markdown("---")
 
 st.sidebar.subheader("⚙ AI Provider")
 
+from utils.constants import ALLOW_OLLAMA
+
+providers = ["Groq"]
+
+if ALLOW_OLLAMA:
+    providers.insert(0, "Ollama")
+
 provider = st.sidebar.radio(
     "Choose Provider",
-    ["Ollama", "Groq"],
+    providers,
     key="provider"
 )
 

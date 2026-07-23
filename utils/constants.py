@@ -28,3 +28,7 @@ APP_DESCRIPTION = (
 PAGE_ICON = "🧠"
 
 PAGE_LAYOUT = "wide"
+
+import os
+
+ALLOW_OLLAMA = os.getenv("ALLOW_OLLAMA", "true").lower() == "true"
